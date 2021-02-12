@@ -46,6 +46,11 @@ if ($repeater_field_setting) {
 					$review_count++;
 				}
 				echo '</div>';
+				
+				echo '<div class="accordion-open">';
+				echo '<span>Read more <i class="fas fa-plus"></i></span>';
+				echo '</div>';
+				
 			} 
 			
 			
