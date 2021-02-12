@@ -12,9 +12,12 @@ if ($repeater_field_setting) {
 		$sub_field_1_setting = $settings->tf_review_accordion_sub_field_1;
 		$sub_field_2_setting = $settings->tf_review_accordion_sub_field_2;
 		
+		echo '<div class="tf-review-accordion">';
+		
 		// If sub field 1 or 2 settings exist, then run the loop for the repeater field
 		if ($sub_field_1_setting || $sub_field_2_setting) {
 			
+			$review_count = 0;
 			foreach($repeater_field as $review) {
 				
 				if ($sub_field_1_setting) {
@@ -23,10 +26,14 @@ if ($repeater_field_setting) {
 				if ($sub_field_2_setting) {
 					$sub_field_2 = $review[$sub_field_2_setting];
 				}
+				include( plugin_dir_path( __FILE__ ) . '/review_body/body.php');
+				$review_count++;
 				
 			}
 			
 		}
+		
+		echo '</div>';
 		
 	}
 	
