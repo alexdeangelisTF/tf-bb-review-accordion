@@ -4,3 +4,6 @@
 
 ?>
 
+.tf-review-accordion .review-accordion-extra {
+	display:none;
+}
