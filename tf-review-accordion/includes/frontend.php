@@ -47,8 +47,9 @@ if ($repeater_field_setting) {
 				}
 				echo '</div>';
 				
-				echo '<div class="accordion-open">';
-				echo '<span>Read more <i class="fas fa-plus"></i></span>';
+				echo '<div class="accordion-open closed">';
+				echo '<span class="more">Read more <i class="fas fa-plus"></i></span>';
+				echo '<span class="less">Read less <i class="fas fa-minus"></i></span>';
 				echo '</div>';
 				
 			} 
