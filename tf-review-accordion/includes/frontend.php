@@ -30,7 +30,7 @@ if ($repeater_field_setting) {
 				}
 				$review_count++;
 			}
-			if ($review_count > 0) {
+			if ($review_count > 1) {
 				$review_count = 0;
 				echo '<div class="review-accordion-extra">';
 				foreach($repeater_field as $review) {
